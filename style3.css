@@ -1,51 +1,27 @@
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
 body {
     background-image: url("bg3.jpg");
     background-size: 100% auto;
     background-position: center top;
     background-repeat: repeat;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-* {
-    box-sizing: border-box;
-}
-
-*{
-    text-align: center;
-}
-
-h1{
-    color:rgb(105, 25, 105);
-    font-size: 35px;
-    text-decoration: underline;
-    font-family: Papyrus, fantasy;
-}
-
-p{
-    font-size: 30px;
-    font-family: fantasy;
-        padding: 10px 100px 10px 100px;
-       
-
-}
-p {
-    color: #4b2354;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-6px);
-    }
-}
-
 
 h1 {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 1vh 2vw;
     color: #381b38;
+    font-size: clamp(22px, 4.375vw, 35px);
+    text-decoration: underline;
+    font-family: Papyrus, fantasy;
     z-index: 1;
 }
 
@@ -63,11 +39,55 @@ h1::before {
     opacity: 0.8;
 }
 
-button{
-    position:absolute;
-    left:600px;
-    transform: rotate(-10deg);
+p {
+    font-size: clamp(16px, 3.75vw, 30px);
     font-family: Papyrus, fantasy;
-    font-size: 20px;
+    padding: 10px 8.33vw;
+    color: #4b2354;
+    animation: float 3s ease-in-out infinite;
 }
 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+button {
+    position: absolute;
+    left: 75%;
+    transform: rotate(-10deg);
+    font-family: fantasy;
+    font-size: clamp(14px, 2.5vw, 20px);
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    button {
+        left: 70%;
+    }
+
+    p {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    h1 {
+        padding: 8px 12px;
+    }
+
+    p {
+        padding: 8px 4vw;
+        font-size: clamp(16px, 4.5vw, 22px);
+    }
+
+    button {
+        left: 65%;
+    }
+}
