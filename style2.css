@@ -1,34 +1,40 @@
+
 body {
     background-image: url("bg2.JPG");
     background-size: 100% auto;
     background-position: center top;
     background-repeat: repeat;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
+
 * {
     box-sizing: border-box;
 }
 
 #birthdayVideo {
-    position:absolute;
-    width: 350px;
-    top:720px;
-    left:80px;
-     object-fit: cover;
-    
+    position: absolute;
+    width: 43.75vw;
+    max-width: 350px;
+    top: 90vw;
+    left: 10vw;
+    object-fit: cover;
 }
 
 #unmuteBtn {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-    padding: 12px 20px;
+    bottom: 2.5vw;
+    right: 3.75vw;
+    padding: clamp(8px, 1.5vw, 12px) clamp(12px, 2.5vw, 20px);
     cursor: pointer;
+    font-size: clamp(12px, 2vw, 16px);
 }
 
-#playBtn{
-    position:absolute;
-    left:600px;
+#playBtn {
+    position: absolute;
+    left: 75vw;
     transform: rotate(-10deg);
     font-family: fantasy;
-    font-size: 20px;
+    font-size: clamp(14px, 2.5vw, 20px);
 }
