@@ -16,7 +16,7 @@ h1{
     color:rgb(105, 25, 105);
     font-size: 35px;
     text-decoration: underline;
-    font-family: fantasy;
+    font-family: Papyrus, fantasy;
 }
 
 p{
@@ -67,7 +67,7 @@ button{
     position:absolute;
     left:600px;
     transform: rotate(-10deg);
-    font-family: fantasy;
+    font-family: Papyrus, fantasy;
     font-size: 20px;
 }
 
