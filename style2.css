@@ -1,0 +1,34 @@
+body {
+    background-image: url("bg2.JPG");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat;
+}
+* {
+    box-sizing: border-box;
+}
+
+#birthdayVideo {
+    position:absolute;
+    width: 350px;
+    top:720px;
+    left:80px;
+     object-fit: cover;
+    
+}
+
+#unmuteBtn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+#playBtn{
+    position:absolute;
+    left:600px;
+    transform: rotate(-10deg);
+    font-family: fantasy;
+    font-size: 20px;
+}

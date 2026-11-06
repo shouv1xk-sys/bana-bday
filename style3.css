@@ -1,0 +1,73 @@
+body {
+    background-image: url("bg3.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: repeat;
+}
+* {
+    box-sizing: border-box;
+}
+
+*{
+    text-align: center;
+}
+
+h1{
+    color:rgb(105, 25, 105);
+    font-size: 35px;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+
+p{
+    font-size: 30px;
+    font-family: fantasy;
+        padding: 10px 100px 10px 100px;
+       
+
+}
+p {
+    color: #4b2354;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
+h1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #381b38;
+    z-index: 1;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    background: #d98bb5;
+    height: 45%;
+    width: 105%;
+    left: -2%;
+    bottom: 15%;
+    z-index: -1;
+    transform: rotate(-2deg);
+    border-radius: 5px 12px 3px 8px;
+    opacity: 0.8;
+}
+
+button{
+    position:absolute;
+    left:600px;
+    transform: rotate(-10deg);
+    font-family: fantasy;
+    font-size: 20px;
+}
+
